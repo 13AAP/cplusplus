@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+struct emp
+{
+char name[20];
+int age,salary;
+char des[20];
+};
+int main()
+{
+int i;
+emp arr[3];
+for(i=0;i<3;i++)
+{
+cout<<"Enter employee name";
+cin>>arr[i].name;
+cout<<"Enter age";
+cin>>arr[i].age;
+cout<<"Enter des";
+cin>>arr[i].des;
+cout<<"Enter salary";
+cin>>arr[i].salary;
+}
+cout <<"detail";
+for(i=0;i<3;i++)
+{
+cout<<"employee name" <<arr[i].name;
+cout<<"employee age" <<arr[i].age;
+cout<<"employee des "<<arr[i].des;
+cout<<"employee sal"<<arr[i].sal;
+}
+return 0;
+}
